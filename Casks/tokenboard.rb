@@ -12,11 +12,12 @@ cask "tokenboard" do
   app "Tokenboard.app"
 
   caveats <<~EOS
-    Tokenboard is distributed without Apple notarization. Install it with
-    `brew install --cask --no-quarantine typiqally/tokenboard/tokenboard`.
+    Tokenboard is distributed without Apple notarization. Before its first
+    launch, explicitly remove the quarantine attribute from the installed app:
 
-    The flag only skips Gatekeeper quarantine; it does not grant Tokenboard
-    additional permissions. Tokenboard remains sandboxed and requests read-only
-    access to folders you explicitly choose.
+      xattr -dr com.apple.quarantine /Applications/Tokenboard.app
+
+    This does not grant Tokenboard additional permissions. Tokenboard remains
+    sandboxed and requests read-only access to folders you explicitly choose.
   EOS
 end
