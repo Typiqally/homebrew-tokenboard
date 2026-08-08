@@ -7,7 +7,7 @@ cask "tokenboard" do
   desc "Track local Claude Code and Codex token usage from the menu bar"
   homepage "https://github.com/Typiqally/tokenboard"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Tokenboard.app"
 
