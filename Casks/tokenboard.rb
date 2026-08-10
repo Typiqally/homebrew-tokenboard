@@ -1,6 +1,6 @@
 cask "tokenboard" do
-  version "0.2.0"
-  sha256 "1a356986a3c9195f057f3b2c647fca7d654adf5be7a06aba3bfdab64f42bff28"
+  version "0.3.0"
+  sha256 "42d304782fd1c035257a6df17b9033c983bc535ead92987f1a29734f16c8a4ca"
 
   url "https://github.com/Typiqally/tokenboard/releases/download/v#{version}/Tokenboard-#{version}.zip"
   name "Tokenboard"
