@@ -1,6 +1,6 @@
 cask "tokenboard" do
-  version "0.7.1"
-  sha256 "ea16a04298b533e2d159e2b1f3d135f7cd9304065d51fd4de1998af1011e440c"
+  version "0.9.0"
+  sha256 "03c2c5ecc43694802636ab40c475ca0dab76ce9be08273449e5c336de57044e2"
 
   url "https://github.com/Typiqally/tokenboard/releases/download/v#{version}/Tokenboard-#{version}.zip"
   name "Tokenboard"
@@ -17,7 +17,8 @@ cask "tokenboard" do
 
       xattr -dr com.apple.quarantine /Applications/Tokenboard.app
 
-    This does not grant Tokenboard additional permissions. Tokenboard remains
-    sandboxed and requests read-only access to folders you explicitly choose.
+    This does not grant Tokenboard additional permissions. Tokenboard is
+    intentionally unsandboxed for same-user Discord IPC and requests read-only
+    access to folders you explicitly choose.
   EOS
 end
